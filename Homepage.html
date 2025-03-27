@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #FFEEDB;
+            color: rgb(0, 0, 0);
+            padding: 60px 0;
+            text-align: center;
+            background-image: url('your-background-image-url.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 4.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+            border-top: 2px solid #96705B;
+            border-bottom: 2px solid #96705B;
+            margin: 0px auto;
+            width: 80%;
+        }
+
+        p {
+            font-size: 1.4rem;
+            margin: 0 auto 30px;
+            max-width: 600px;
+            text-align: justify;
+            text-indent: 2em;
+            margin-top: 1%;
+        }
+
+        .cta-btn {
+            background: #FFDB58; 
+            color: #000000; 
+            padding: 15px 30px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+            transition: background 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            background: #96705B; /
+        }
+
+        nav {
+            background-color: #96705B; 
+
+        }
+
+        nav ul {
+            text-align: center;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 0 30px;
+        }
+
+        nav ul li a {
+            color: #FFDB58; 
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 10px 20px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #849483; 
+            color: white; 
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+
+            .cta-btn {
+                font-size: 1rem;
+                padding: 10px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .cta-btn {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WELCOME TO BIKINI BEACHES</h1>
+        <p>Your perfect getaway in nature. Discover Paradise and experience the luxury of our exclusive resort, where nature meets comfort.</p>
+        <a href="Amenities.html" class="cta-btn"><strong>DISCOVER MORE</strong></a>
+    </header>
+</body>
+</html>

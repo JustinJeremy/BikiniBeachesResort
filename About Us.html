@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #FFEEDB;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        header {
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        h2 {
+            font-size: 3rem;
+            margin-bottom: 0px;
+            border-bottom: 2px solid #96705B;
+            margin: 0px auto;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+            width: 100%;
+        }
+        
+        h3 {
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+        }
+        
+        p {
+            font-size: 1.3rem;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .cta-btn {
+            display: inline-block;
+            background: #FFDB58;
+            color: #634f2b;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        
+        .cta-btn:hover {
+            background: #b37d19;
+        }
+        
+        nav ul {
+            background-color: #96705B;
+            text-align: center;
+            padding: 10px;
+            border-radius: 15px;
+            font-size: 1.1rem;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; 
+            list-style-type: none;
+        }
+        
+        nav ul li {
+            margin: 0 30px;
+        }
+        
+        nav ul li a {
+            color: #000000;
+            text-decoration: none;
+            padding: 0px 10px;   
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+        }
+        
+        nav ul li a:hover {
+            background-color: #FFEEDB;
+            color: rgb(0, 0, 0);
+            border-radius: 10px;
+        }
+        
+        main {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .content {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        #about-us h2 {
+            font-size: 5rem;
+            margin-bottom: 50px;
+        }
+        
+        #about-us p {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            text-align: justify;
+            text-indent: 3.0em; 
+        }
+        
+        .social-media {
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
+        
+        .social-icon {
+            display: flex;
+            align-items: center;
+            margin: 0 50px;
+        }
+        
+        .social-img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        
+        .social-icon a {
+            font-size: 1.2rem;
+            color: #745722ab;
+            text-decoration: none;
+        }
+        
+        .social-icon a:hover {
+            color: #492a0981;
+        }
+        
+        footer {
+            width: 65%;
+            background-color: #FFEEDB;
+            color: #000000;
+            text-align: center;
+            padding: 0px 0;
+        }
+        
+        footer .footer-line {
+            border-top: 2px solid #96705B;
+            margin: 0px auto;
+            width: 100%;
+        }
+        
+        footer p {
+            margin-top: 20px;
+            font-size: 1rem;
+            line-height: 0;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+        
+            .cta-btn {
+                font-size: 1rem;
+                padding: 10px 20px;
+            }
+        
+            .gallery .room-card {
+                width: 100%; 
+            }
+        
+            #about-us p {
+                font-size: 1rem;
+            }
+        
+            .social-img {
+                width: 25px;
+                height: 25px;
+            }
+        
+            .social-icon a {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+        
+            .cta-btn {
+                font-size: 0.9rem;
+            }
+        
+            .gallery .room-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="Homepage.html">HOME</a></li>
+            <li><a href="Amenities.html">AMENITIES</a></li>
+            <li><a href="Room Rates.html">ROOM RATES</a></li>
+            <li><a href="Reservation.html">RESERVATION</a></li>
+            <li><a href="About Us.html">ABOUT US</a></li>
+        </ul>
+    </nav>
+
+    <section id="about-us" class="content">
+        <h2>ABOUT US</h2>
+        <p>Bikini Beaches Resort has been providing luxurious and unforgettable vacation experiences for over a decade. Nestled along the stunning coastline, we offer world-class amenities, top-tier hospitality, and serene beachfront views. Whether you're looking for relaxation or adventure, we cater to every guest’s need. Our resort includes various modern facilities, including infinity pools, spa services, fine dining, and exciting water activities. Our dedicated team ensures that every stay is personalized and exceeds expectations, making us the perfect destination for families, honeymooners, and solo travelers alike. Come and discover why Bikini Beaches is the ultimate escape to paradise.</p>
+
+        <div class="social-media">
+            <div class="social-icon">
+                <img src="FB.jpg" class="social-img">
+                <a href="https://facebook.com/bikinibeachesfb">BikiniBeachesFB</a>
+            </div>
+            <div class="social-icon">
+                <img src="IG.jpg" class="social-img">
+                <a href="https://instagram.com/bikinibeachesig">BikiniBeachesIG</a>
+            </div>
+            <div class="social-icon">
+                <img src="Twitter.jpg" class="social-img">
+                <a href="https://twitter.com/bikinibeachestw">BikiniBeachesTW</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-line">
+            <p>&copy; 2024 Paradise Resort. All rights reserved.</p>
+            <p>McDavid St. Herbosa, Manila, Philippines</p>
+            <p>Tel: 0925287876</p>
+        </div>
+    </footer>
+</body>
+</html>

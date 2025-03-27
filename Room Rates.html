@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Rates</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #FFEEDB;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        header {
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        h2 {
+            font-size: 3rem;
+            margin-bottom: 0px;
+            border-bottom: 2px solid #96705B;
+            margin: 0px auto;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+            width: 100%;
+        }
+        
+        h3 {
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+        }
+        
+        p {
+            font-size: 1.3rem;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .cta-btn {
+            display: inline-block;
+            background: #FFDB58;
+            color: #634f2b;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        
+        .cta-btn:hover {
+            background: #b37d19;
+        }
+        
+        nav ul {
+            background-color: #96705B;
+            text-align: center;
+            padding: 10px;
+            border-radius: 15px;
+            font-size: 1.1rem;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; 
+            list-style-type: none;
+        }
+        
+        nav ul li {
+            margin: 0 30px;
+        }
+        
+        nav ul li a {
+            color: #000000;
+            text-decoration: none;
+            padding: 0px 10px;   
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+        }
+        
+        nav ul li a:hover {
+            background-color: #FFEEDB;
+            color: rgb(0, 0, 0);
+            border-radius: 10px;
+        }
+        
+        .content {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #FFEEDB;
+            text-align: center;
+        }
+        
+        .gallery {
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+        
+        .gallery .room-card {
+            width: 30%; 
+            text-align: center;
+            border: 2px solid #000000; 
+            border-radius: 10px; 
+            padding: 20px; 
+            background-color: #fff; 
+        }
+        
+        .gallery img {
+            width: 100%; 
+            height: auto;
+            border-radius: 10px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .gallery h3 {
+            margin: 15px 0 5px; 
+        }
+
+        .gallery h3::after {
+            content: "";
+            display: block;
+            width: 50px; 
+            height: 2px; 
+            background: #634f2b; 
+            margin: 10px auto; 
+        }
+
+        footer {
+            width: 65%;
+            background-color: #FFEEDB;
+            color: #000000;
+            text-align: center;
+            padding: 0px 0;
+        }
+        
+        footer .footer-line {
+            border-top: 2px solid #96705B;
+            margin: 0px auto;
+            width: 100%;
+        }
+        
+        footer p {
+            margin-top: 20px;
+            font-size: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+        
+            .cta-btn {
+                font-size: 1rem;
+                padding: 10px 20px;
+            }
+        
+            .gallery .room-card {
+                width: 100%; 
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+        
+            .cta-btn {
+                font-size: 0.9rem;
+            }
+        
+            .gallery .room-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="Homepage.html">HOME</a></li>
+            <li><a href="Amenities.html">AMENITIES</a></li>
+            <li><a href="Room Rates.html">ROOM RATES</a></li>
+            <li><a href="Reservation.html">RESERVATION</a></li>
+            <li><a href="About Us.html">ABOUT US</a></li>
+        </ul>
+    </nav>
+
+    <section id="amenities" class="content">
+        <h2>ROOM RATES</h2>
+        <p>Enjoy a tranquil escape in our beautifully appointed rooms, featuring stunning views, comfortable furnishings, and modern amenities for a relaxing stay.</p>
+        <div class="gallery">
+            <div class="room-card">
+                <img src="Family Bungalow.jpg" alt="Family Bungalow">
+                <h3>FAMILY BUNGALOW</h3>
+                <p>A cozy retreat ideal for families, featuring spacious interiors and essential amenities. Starting at ($100) per night.</p>
+            </div>
+            <div class="room-card">
+                <img src="Loft Room.jpg" alt="Loft Room">
+                <h3>LOFT ROOM</h3>
+                <p>Enjoy a modern and stylish loft experience, complete with comfortable furnishings and a relaxing atmosphere. Starting at ($150) per night.</p>
+            </div>
+            <div class="room-card">
+                <img src="Deluxe Room.jpg" alt="Deluxe Room">
+                <h3>DELUXE ROOM</h3>
+                <p>Experience luxury with upscale decor and stunning views. The perfect choice for a romantic escape. Starting at ($200) per night.</p>
+            </div>   
+            <div class="room-card">
+                <img src="Seaview Room.jpg" alt="Seaview">
+                <h3>SEAVIEW ROOM</h3>
+                <p>Wake up to breathtaking ocean views and indulge in tranquility and comfort. Starting at ($250) per night.</p>
+            </div>
+            <div class="room-card">
+                <img src="Suite Room.jpg" alt="Suite Room">
+                <h3>SUITE ROOM</h3>
+                <p>Elevate your stay with spacious living areas and premium amenities for the ultimate in relaxation. Starting at ($300) per night.</p>
+            </div>     
+            <div class="room-card">
+                <img src="Beach Villa.jpg" alt="Beach Viila">
+                <h3>BEACH VILLA</h3>
+                <p>Our luxurious beach villa offers unparalleled privacy and stunning beachfront access, perfect for a lavish retreat. Starting at ($500) per night.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-line"></div>
+        <p>&copy; 2024 Bikini Beaches Resort. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

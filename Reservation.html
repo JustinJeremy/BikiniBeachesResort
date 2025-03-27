@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+        
+    body {
+        font-family: 'Open Sans', sans-serif;
+        background-color: #FFEEDB;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header {
+        color: white;
+        padding: 40px 0;
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 0px;
+        border-bottom: 2px solid #96705B;
+        margin: 0px auto;
+        width: 100%;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+        text-align: center;
+    }
+    
+    .bold {
+        font-weight: bold;
+    }
+    
+    .cta-btn {
+        display: inline-block;
+        background: #FFDB58;
+        color: #634f2b;
+        padding: 15px 30px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 1.2rem;
+        transition: background-color 0.3s ease;
+    }
+    
+    .cta-btn:hover {
+        background: #b37d19;
+    }
+    
+    nav ul {
+        background-color: #96705B;
+        text-align: center;
+        padding: 10px;
+        border-radius: 15px;
+        font-size: 1.1rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; 
+        list-style-type: none;
+    }
+    
+    nav ul li {
+        margin: 0 30px;
+    }
+    
+    nav ul li a {
+        color: #000000;
+        text-decoration: none;
+        padding: 0px 10px;   
+        font-weight: bold;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    }
+
+    nav ul li a:hover {
+        background-color: #FFEEDB;
+        color: rgb(0, 0, 0);
+        border-radius: 10px;
+    }
+    
+    .content {
+        max-width: 1500px;
+        margin: 0 auto;
+        padding: 40px;
+        background-color: #FFEEDB;
+        text-align: center;
+    }
+    
+    footer {
+        width: 65%;
+        background-color: #FFEEDB;
+        color: #000000;
+        text-align: center;
+        padding: 0px 0;
+    }
+    
+    footer .footer-line {
+        border-top: 2px solid #96705B;
+        margin: 0px auto;
+        width: 100%;
+        }
+        
+    footer p {
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+    
+    .form-container {
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 30px;
+        border-top: 0px;
+        border-bottom: 0px;
+        padding: 30px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        width: 90%;
+        max-width: 800px;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    table {
+        margin: 20px auto;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    td, th {
+        padding: 10px;
+        text-align: left;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+        width: 90%;
+        padding: 8px;
+        margin: 5px 0;
+        box-sizing: border-box;
+        border: 2px solid #96705B;
+        border-radius: 5px;
+        transition: border-color 0.3s ease;
+    }
+    
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus,
+    select:focus {
+        border-color: #96705B;
+    }
+    
+    textarea {
+        height: 60px;
+    }
+    
+    .pizza-options th {
+        border: 2px solid #96705B; 
+        text-align: center;
+        vertical-align: top;
+    }
+    
+    .pizza-options td {
+        border: 2px solid #96705B; 
+        text-align: Cent;
+        vertical-align: top;
+    }
+    
+    input[type="radio"],
+    input[type="checkbox"] {
+        margin-right: 5px;
+    }
+    
+    input[type="submit"] {
+        background-color: #96705B;
+        color: #000000;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+        transition: background-color 0.3s ease;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #FFEEDB
+    }
+    
+    .center {
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 2.5rem;
+        }
+    
+        .cta-btn {
+            font-size: 1rem;
+            padding: 10px 20px;
+        }
+    
+        #about-us p {
+            font-size: 1rem;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        h1 {
+            font-size: 2rem;
+        }
+    
+        .cta-btn {
+            font-size: 0.9rem;
+        }
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="Homepage.html">HOME</a></li>
+            <li><a href="Amenities.html">AMENITIES</a></li>
+            <li><a href="Room Rates.html">ROOM RATES</a></li>
+            <li><a href="Reservation.html">RESERVATION</a></li>
+            <li><a href="About Us.html">ABOUT US</a></li>
+        </ul>
+    </nav>
+
+    <div class="form-container">
+        <h2>RESERVATION FORM</h2>
+
+        <form action="#" method="POST">
+            <table>
+                <tr>
+                    <td><strong>*NAME:</strong></td>
+                    <td><input type="text" name="name" required></td>
+                    <td><strong>*EMAIL:</strong></td>
+                    <td><input type="text" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><strong>*TELEPHONE:</strong></td>
+                    <td><input type="text" name="telephone" required></td>
+                    <td><strong>*ADDRESS:</strong></td>
+                    <td><input type="text" name="address" required></td>
+                </tr>
+                <tr>
+                    <td><strong>*CHECK-IN:</strong></td>
+                    <td><input type="date" name="check-in" required></td>
+                    <td><strong>*CHECK-OUT:</strong></td>
+                    <td><input type="date" name="check-out" required></td>
+                </tr>
+            </table>
+
+            <p><strong>PICK ALL DESIRED OPTIONS:</strong></p>
+
+            <table class="pizza-options">
+                <tr>
+                    <th>AMENITIES</th>
+                    <th>ROOMS</th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="AMENITIES" value="spa"> SPA<br>
+                        <input type="checkbox" name="AMENITIES" value="infinity_pool"> INFINITY POOL<br>
+                        <input type="checkbox" name="AMENITIES" value="private_beach"> PRIVATE BEACH<br>
+                        <input type="checkbox" name="AMENITIES" value="scuba_diving"> SCUBA DIVING<br>
+                        <input type="checkbox" name="AMENITIES" value="spa"> KAYAKING AND PADDLE BOARDING<br>
+                        <input type="checkbox" name="AMENITIES" value="kayaking_&_paddle_boarding"> BAR AND RESTAURANT<br>
+                    </td>
+                    <td>
+                        <input type="radio" name="ROOMS" value="family_bungalow_($100/Night)"> FAMILY BUNGALOW ($100/Night)<br>
+                        <input type="radio" name="ROOMS" value="loft_room_($150/Night)"> LOFT ROOM ($150/Night)<br>
+                        <input type="radio" name="ROOMS" value="deluxe_room_($200/Night)"> DELUXE ROOM ($200/Night)<br>
+                        <input type="radio" name="ROOMS" value="seaview_room_($250/Night)"> SEAVIEW ROOM ($250/Night)<br>
+                        <input type="radio" name="ROOMS" value="suite_room_($300/Night)"> Suite Room ($300/Night)<br>
+                        <input type="radio" name="ROOMS" value="beach_villa_($500/Night)"> Beach Villa ($500/Night)<br>
+                    </td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <td><strong>PREFERRED TIME OF CHECK-IN:</strong></td>
+                    <td>
+                        <select name="checkin_hour">
+                            <option value="">--</option>
+                            <option value="08">12:00am - 4:00am</option>
+                            <option value="09">5:00am - 8:00am</option>
+                            <option value="10">9:00am - 12:00pm</option>
+                            <option value="11">1:00pm - 4:00pm</option>
+                            <option value="12">5:00pm - 8:00pm</option>
+                            <option value="13">9:00pm - 12:00am</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>PREFERRED TIME OF CHECK-OUT:</strong></td>
+                    <td>
+                        <select name="checkout_hour">
+                            <option value="">--</option>
+                            <option value="08">12:00am - 4:00am</option>
+                            <option value="09">5:00am - 8:00am</option>
+                            <option value="10">9:00am - 12:00pm</option>
+                            <option value="11">1:00pm - 4:00pm</option>
+                            <option value="12">5:00pm - 8:00pm</option>
+                            <option value="13">9:00pm - 12:00am</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>            
+
+            <div class="center">
+                <input type="submit" value="SUBMIT RESERVATION" class="bold">
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-line"></div>
+        <p>&copy; 2024 Bikini Beaches Resort. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
